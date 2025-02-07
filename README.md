@@ -1,7 +1,7 @@
 # design_project_viit
 
 # Clone the repository
-git clone '/<repo-url/>'
+clone repository
 
 # Move into the project directory
 cd design_project
