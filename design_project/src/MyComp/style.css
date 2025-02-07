@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    
+  
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Allows content to grow downward */
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh; /* Ensures full height but allows scrolling */
+    box-sizing: border-box;
+}
+
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 5px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff4757;
+  }
+  
+  .map-and-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Adds spacing between map and safety-info */
+}
+
+  
+  .map {
+    height: 500px;
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 1000px; /* Optional: Set max-width */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .safety-info {
+    margin-top: 20px;
+    text-align: left;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables scrolling when content exceeds max height */
+}
